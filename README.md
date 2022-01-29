@@ -89,7 +89,7 @@ début de la ligne suivante). On utilise pour cela la fonction `lseek`.
 
 Jusqu'ici, tous les programmes que nous avons écrits avaient une fonction `main` ne prenant aucun argument : 
 `int main()`. Il est toutefois possible de lui passer deux arguments, un entier et un tableau de chaînes de 
-caractères : `int main(int argc, char **argv)`<sup id="fnb_main">[1](#fn_main)</sup>. Dans ce cas, si l'exécutable est
+caractères : `int main(int argc, char **argv)`[^1]. Dans ce cas, si l'exécutable est
 appelé depuis un terminal avec des arguments, l'entier `argc` correspond au nombre d'arguments, et le tableau `argv` 
 contient tous les arguments sous forme de chaînes de caractères.
 
@@ -240,5 +240,5 @@ de suite.
 ---
 Notes :
 
-<b id="fn_main">1.</b> On peut également utiliser les déclarations `int main(int argc, char argv[][])` ou même 
-`int main(int argc, char *argv[])` qui sont équivalentes. [↩](#fnb_main)
+[^1]: On peut également utiliser les déclarations `int main(int argc, char argv[][])` ou même 
+`int main(int argc, char *argv[])` qui sont équivalentes.
