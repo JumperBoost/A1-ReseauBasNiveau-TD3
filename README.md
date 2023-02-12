@@ -44,7 +44,7 @@ fichier :
 (`\n`) ou avoir lu `size` caractères ;
 - elle place les octets lus dans le tableau `s` passé en argument (on suppose que le tableau `s` peut contenir `size` 
 caractères) ;
-- le résultat renvoyé par la fonction est le nombre de caractères effectivement lus dans le fichier.
+- le résultat renvoyé par la fonction est le nombre de caractères effectivement lus dans le fichier, ou -1 en cas d'erreur.
 
 1. En utilisant les appels système, écrivez la fonction `lireligne` dans le fichier `lireligne.c` en lui faisant lire
     les caractères un par un afin de pouvoir s'arrêter facilement si elle rencontre un retour à la ligne.
