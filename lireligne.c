@@ -8,7 +8,7 @@
  * @param fd descripteur de fichier ouvert en lecture
  * @param s buffer dans lequel les octets lus sont écrits
  * @param size nombre maximum d'octets à lire
- * @return le nombre d'octets effectivement lus
+ * @return le nombre d'octets effectivement lus ou -1 en cas d'erreur
  */
 int lireligne(int fd, char *s, int size) {
 
