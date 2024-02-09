@@ -8,7 +8,7 @@ int main() {
     chdir("..");    // Obligatoire si utilisation de Cmake (pour définir le bon working directory)
     int fd = open("message.txt", O_RDONLY);
     if(fd < 0) {
-        printf("Une erreur est survenue lors de la lecture du fichier.\n");
+        printf("Une erreur est survenue lors de l'ouverture du fichier.\n");
     } else {
         char buffer[670];
         int size = read(fd, buffer, 669);
