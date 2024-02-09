@@ -9,3 +9,9 @@
 
 # Unignore directories
 !*/
+
+# Cmake
+cmake-build-debug/
+
+# Jetbrains
+.idea/
