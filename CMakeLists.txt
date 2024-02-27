@@ -5,8 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(TD3
         #bigfich.c
-        copy.c
-        #lireligne.c
+        #copy.c
+        lireligne.c
         #mygetc.c
         #readfile.c
         )

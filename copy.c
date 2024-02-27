@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include <fcntl.h>
 
 /**
@@ -14,9 +12,8 @@ int main() {
     } else {
         char source_buffer[670];
         int source_rsize = read(source_fd, source_buffer, 669);
-        source_buffer[source_rsize] = '\0';
 
-        int dest_fd = open("copie.txt", O_RDWR | O_CREAT | O_TRUNC);
+        int dest_fd = open("copie.txt", O_RDWR | O_CREAT | O_TRUNC | O_BINARY, 0644);
         if(dest_fd < 0) {
             printf("Une erreur est survenue lors de l'ouverture du fichier destinataire.\n");
         } else {
