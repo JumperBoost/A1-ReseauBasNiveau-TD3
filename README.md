@@ -1,3 +1,5 @@
+![](resources/logo.jpeg)
+
 # TD n°3 - Entrées / Sorties
  
 Dans ce TD, nous allons utiliser les fonctions `open`, `close`, `read`, `write`, et `lseek` pour manipuler les fichiers 
